@@ -31,3 +31,14 @@ nav ul li a {
 main {
   padding: 20px;
 }
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+
