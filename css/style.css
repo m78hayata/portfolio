@@ -49,15 +49,22 @@ ul {
   word-wrap: break-word;
 }
 
+/* ナビゲーションリンクの基本スタイル */
 .nav-link {
-  color: #666;
+  color: #666; /* 通常時は少し暗い色 */
+  margin-right: 20px; /* ナビゲーションリンク間の余白を設定 */
   position: relative;
-  text-decoration: none;
-  transition: color 0.3s;
+  text-decoration: none; /* 下線を消去 */
+  transition: color 0.3s; /* 色の変化を滑らかに */
 }
 
+/* ホバー時とアクティブ時のスタイル */
 .nav-link:hover, .nav-link.active {
-  color: #fff;
+  color: #fff; /* フォントの色を白に */
+}
+
+.nav-link::after, .nav-link.active::after {
+  background-color: #fff; /* 下線の色を白に */
 }
 
 .nav-link::after, .nav-link:hover::after, .nav-link.active::after {
