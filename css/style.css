@@ -44,6 +44,11 @@ header, footer {
   box-shadow: 0 2px 4px rgba(0,0,0,.2); /* ヘッダーとフッターに軽い影を追加 */
 }
 
+ul {
+  word-wrap: break-word; /* 古いブラウザ向け */
+  overflow-wrap: break-word; /* 標準 */
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
