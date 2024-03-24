@@ -112,7 +112,7 @@ p {
 
 .timeline {
   border-left: 2px solid #007bff; /* タイムラインの線 */
-  padding-left: 100px; /* タイムラインからの余白を増やして右に寄せる */
+  padding-left: 20px; /* タイムラインからの余白を増やして右に寄せる */
   position: relative;
 }
 
