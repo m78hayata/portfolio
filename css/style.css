@@ -19,6 +19,15 @@ body {
   }
 }
 
+.text-large {
+  font-size: 1.2em; /* 上段のテキストサイズを大きく */
+}
+
+.text-small {
+  font-size: 0.9em; /* 下段のテキストサイズを小さく */
+}
+
+
 header, footer {
   background-color: #333;
   color: white;
