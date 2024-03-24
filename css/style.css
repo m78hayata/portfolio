@@ -123,7 +123,7 @@ p {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -6px; /* 中心点の位置を調整 */
+  left: -10px; /* 中心点の位置を調整 */
   top: 0;
   height: 12px;
   width: 12px;
