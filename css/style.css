@@ -69,6 +69,37 @@ nav ul li a:hover {
   color: #ccc; /* ホバー時に色を変えてユーザーインタラクションを示す */
 }
 
+/* ナビゲーションリンクの基本スタイル */
+.nav-link {
+  color: #666; /* 通常時は少し暗い色 */
+  position: relative;
+  text-decoration: none; /* 下線を消去 */
+  transition: color 0.3s; /* 色の変化を滑らかに */
+}
+
+/* ホバー時のスタイル */
+.nav-link:hover, .nav-link.active {
+  color: #fff; /* フォントの色を明るく */
+}
+
+/* 下線のアニメーション */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s, left 0.3s; /* 幅と位置の変化を滑らかに */
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%; /* 下線の幅を最大に */
+  left: 0; /* 下線の位置を左端に */
+}
+
+
 main {
   padding: 20px;
 }
