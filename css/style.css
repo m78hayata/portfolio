@@ -4,8 +4,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 4vw;
   background-color: #f8f9fa; /* 明るいグレーの背景色で落ち着いた雰囲気を */
+}
+/* スマートフォンや小さいデバイス向けのスタイル */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px; /* 基本のフォントサイズを大きくする */
+  }
+  h1, h2, h3 {
+      font-size: 1.5rem; /* タイトルのフォントサイズを相対的に大きくする */
+  }
+  p {
+      font-size: 1rem; /* 段落のテキストサイズを調整 */
+  }
 }
 
 header, footer {
