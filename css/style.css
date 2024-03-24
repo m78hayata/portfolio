@@ -49,36 +49,38 @@ ul {
   word-wrap: break-word;
 }
 
-/* ナビゲーションリンクの下線スタイル */
-.nav-link::after {
+/* ナビゲーションリンクの基本スタイル */
+.nav-link {
+  color: #666; /* 通常時は少し暗い色 */
+  margin-right: 20px; /* ナビゲーションリンク間の余白を設定 */
+  position: relative;
+  text-decoration: none; /* 下線を消去 */
+  transition: color 0.3s; /* 色の変化を滑らかに */
+}
+
+/* ホバー時とアクティブ時のスタイル */
+.nav-link:hover, .nav-link.active {
+  color: #fff; /* フォントの色を白に */
+}
+
+.nav-link::after, .nav-link.active::after {
+  background-color: #fff; /* 下線の色を白に */
+}
+
+.nav-link::after, .nav-link:hover::after, .nav-link.active::after {
   content: '';
   position: absolute;
   bottom: -5px;
-  left: 0; /* アニメーション開始時の位置 */
-  max-width: 0; /* 下線の初期幅 */
+  left: 50%;
+  width: 0;
   height: 2px;
-  background-color: #fff; /* 下線の色 */
-  transition: all 0.2s ease; /* 通常時のトランジション速度 */
+  background-color: #fff;
+  transition: width 0.3s, left 0.3s;
 }
 
-/* ホバー時とアクティブ時の下線スタイル */
 .nav-link:hover::after, .nav-link.active::after {
-  animation: underline-grow-shrink 0.4s forwards; /* アニメーション適用 */
-}
-
-/* キーフレームアニメーションの定義 */
-@keyframes underline-grow-shrink {
-  0% {
-    max-width: 0;
-  }
-  75% {
-    max-width: 120%; /* 最初に少し長く */
-    left: -10%; /* 中心から左右に伸びるように調整 */
-  }
-  100% {
-    max-width: 100%; /* 最終的な幅 */
-    left: 0; /* 元の位置に戻す */
-  }
+  width: 100%;
+  left: 0;
 }
 
 main {
