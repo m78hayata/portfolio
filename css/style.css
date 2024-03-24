@@ -49,37 +49,44 @@ ul {
   word-wrap: break-word;
 }
 
-/* キーフレームアニメーションの定義 */
-@keyframes underline-grow-shrink {
-  0% {
-      width: 0;
-  }
-  50% {
-      width: 110%; /* 最初に少し長く */
-      left: -5%; /* 中央から始まるように左にずらす */
-  }
-  100% {
-      width: 100%; /* 最終的な幅 */
-      left: 0; /* 元の位置に戻す */
-  }
-}
-
 /* ナビゲーションリンクの基本スタイル */
 .nav-link::after {
-content: '';
-position: absolute;
-bottom: -5px;
-left: 0;
-width: 0;
-height: 2px;
-background-color: #fff; /* 下線の色 */
-transition: all 0.3s ease; /* トランジションを設定 */
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  max-width: 0; /* 実際のテキストの長さに合わせる */
+  height: 2px;
+  background-color: #fff; /* 下線の色 */
+  transition: all 0.2s ease; /* トランジションの速度を速く */
 }
 
 /* ホバー時とアクティブ時のスタイル */
 .nav-link:hover::after, .nav-link.active::after {
-animation: underline-grow-shrink 0.5s forwards; /* アニメーションを適用 */
+  max-width: 100%; /* テキストの長さに合わせて最大幅を指定 */
+  transition: all 0.2s ease; /* 戻る速さも速く */
 }
+
+/* キーフレームアニメーションの定義 */
+@keyframes underline-grow-shrink {
+    0% {
+        max-width: 0;
+    }
+    50% {
+        max-width: 120%; /* 最初に少し長くしてみる */
+        left: -10%; /* テキストの中心から伸びるように調整 */
+    }
+    100% {
+        max-width: 100%; /* テキストの長さに合わせる */
+        left: 0; /* 元の位置に戻す */
+    }
+}
+
+/* ホバー時とアクティブ時のスタイルにアニメーションを適用 */
+.nav-link:hover::after, .nav-link.active::after {
+  animation: underline-grow-shrink 0.4s forwards; /* アニメーションを適用、持続時間を調整 */
+}
+
 
 .nav-link::after, .nav-link.active::after {
   background-color: #fff; /* 下線の色を白に */
