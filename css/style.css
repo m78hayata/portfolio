@@ -151,7 +151,7 @@ p {
 .contact-list li img {
   margin-right: 10px; /* 画像とテキストの間隔 */
   width: 48px; /* 元のサイズの2倍の幅 */
-  height: 48px; /* 元のサイズの2倍の高さ */
+  /* height: 48px;*/ /* 元のサイズの2倍の高さ */
   object-fit: contain; /* 縦横比を保持 (必要に応じて) */
 }
 
