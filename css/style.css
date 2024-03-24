@@ -63,6 +63,11 @@ p {
   color: white !important;
 }
 
+/* 現在アクティブなナビゲーションリンクの色を変更したい場合 */
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: #ccc !important;
+}
+
 /* ボタンスタイルの追加 */
 .btn-custom {
   background-color: #007bff; /* Bootstrapのプライマリーカラー */
