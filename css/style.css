@@ -49,7 +49,7 @@ ul {
   overflow-wrap: break-word; /* 標準 */
 }
 
-nav ul {
+/* nav ul {
   list-style-type: none;
   padding: 0;
 }
@@ -62,12 +62,12 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s; /* ホバー時の色変更アニメーション */
-}
+  transition: color 0.3s; /* ホバー時の色変更アニメーション
+} */
 
 nav ul li a:hover {
   color: #ccc; /* ホバー時に色を変えてユーザーインタラクションを示す */
-}
+} */
 
 /* ナビゲーションリンクの基本スタイル */
 .nav-link {
@@ -98,7 +98,6 @@ nav ul li a:hover {
   width: 100%; /* 下線の幅を最大に */
   left: 0; /* 下線の位置を左端に */
 }
-
 
 main {
   padding: 20px;
