@@ -112,18 +112,18 @@ p {
 
 .timeline {
   border-left: 2px solid #007bff; /* タイムラインの線 */
-  padding-left: 40px; /* タイムラインからの余白を増やして右に寄せる */
+  padding-left: 100px; /* タイムラインからの余白を増やして右に寄せる */
   position: relative;
 }
 
 .timeline-item {
-  margin-bottom: 20px; /* アイテム間の余白 */
+  margin-bottom: 10px; /* アイテム間の余白 */
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -9px; /* 中心点の位置を調整して線と丸が中心で合うように */
+  left: -8px; /* 中心点の位置を調整して線と丸が中心で合うように */
   top: 0;
   height: 12px;
   width: 12px;
