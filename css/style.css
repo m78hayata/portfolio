@@ -180,3 +180,15 @@ ul {
 ul li {
   line-height: 1.6; /* リストアイテムの行間隔 */
 }
+
+.card-title {
+  color: #007bff; /* タイトルの色を変更 */
+}
+
+.card-subtitle {
+  font-weight: bold; /* サブタイトル（日付）を強調 */
+}
+
+.card-link {
+  color: #007bff; /* リンクの色を調整 */
+}
