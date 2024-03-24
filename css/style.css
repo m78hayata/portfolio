@@ -20,11 +20,12 @@ body {
 }
 
 .text-large {
-  font-size: 1.2em; /* 上段のテキストサイズを大きく */
+  font-size: 1.2rem; /* 上段のテキストサイズを大きく */
 }
 
 .text-small {
-  font-size: 0.9em; /* 下段のテキストサイズを小さく */
+  font-size: 0.9rem; /* 下段のテキストサイズを小さく */
+  margin-left: 20px
 }
 
 
