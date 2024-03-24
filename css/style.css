@@ -109,3 +109,31 @@ p {
 .btn-custom:hover {
   background-color: #0056b3; /* ホバー時に暗く */
 }
+
+.timeline {
+  border-left: 2px solid #007bff; /* タイムラインの線 */
+  padding-left: 20px; /* タイムラインからの余白 */
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 20px; /* アイテム間の余白 */
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px; /* 中心点の位置を調整 */
+  top: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #007bff; /* 中心点の色 */
+  border-radius: 50%; /* 円形にする */
+  box-shadow: 0 0 0 3px #fff; /* 中心点の周りの白い輪 */
+}
+
+.date {
+  font-weight: bold;
+  margin-right: 10px; /* 日付とテキストの間隔 */
+}
+
