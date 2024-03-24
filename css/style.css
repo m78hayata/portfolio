@@ -2,7 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif; /* Google FontsなどからRobotoをインポートするとより現代的 */
   margin: 0;
-  padding: 0;
+  padding: auto;
   box-sizing: border-box;
   background-color: #f8f9fa; /* 明るいグレーの背景色で落ち着いた雰囲気を */
 }
@@ -10,6 +10,7 @@ body {
 @media (max-width: 768px) {
   body {
       font-size: 16px; /* 基本のフォントサイズを大きくする */
+      padding: auto;
   }
   h1, h2, h3, h4, h5, h6{
       font-size: 1.5rem; /* タイトルのフォントサイズを相対的に大きくする */
