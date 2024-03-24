@@ -17,6 +17,12 @@ body {
   p {
       font-size: 1rem; /* 段落のテキストサイズを調整 */
   }
+  header h1 {
+    font-size: 20px; /* ヘッダーのタイトルのフォントサイズを大きくする */
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px; /* ナビゲーションリンクのフォントサイズを大きくする */
+  }
 }
 
 .text-large {
