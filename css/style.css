@@ -137,3 +137,21 @@ p {
   margin-right: 10px; /* 日付とテキストの間隔 */
 }
 
+.contact-list {
+  list-style-type: none; /* リストの記号を消去 */
+  padding: 0; /* リストのデフォルトパディングを消去 */
+}
+
+.contact-list li {
+  margin-bottom: 10px; /* リストアイテム間のマージン */
+  display: flex; /* フレックスボックスモデルを適用 */
+  align-items: center; /* アイテムを中央揃え */
+}
+
+.contact-list li img {
+  margin-right: 10px; /* 画像とテキストの間隔 */
+  width: 24px; /* ロゴ画像のサイズ調整 */
+  height: 24px; /* ロゴ画像のサイズ調整 */
+}
+
+
