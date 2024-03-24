@@ -49,16 +49,16 @@ ul {
   word-wrap: break-word;
 }
 
-/* ナビゲーションリンクの下線スタイル */
+/* ナビゲーションリンクの基本スタイル */
 .nav-link::after {
   content: '';
   position: absolute;
   bottom: -5px;
-  left: 0; /* アニメーション開始時の位置 */
-  max-width: 0; /* 下線の初期幅 */
+  left: 0;
+  max-width: 100%; /* 実際のテキストの長さに合わせる */
   height: 2px;
   background-color: #fff; /* 下線の色 */
-  transition: all 0.2s ease; /* 通常時のトランジション速度 */
+  transition: all 0.2s ease; /* トランジションの速度を速く */
 }
 
 /* ホバー時とアクティブ時の下線スタイル */
