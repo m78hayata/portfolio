@@ -1,9 +1,10 @@
 /* css/style.css */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Google FontsなどからRobotoをインポートするとより現代的 */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f8f9fa; /* 明るいグレーの背景色で落ち着いた雰囲気を */
 }
 
 header, footer {
@@ -11,6 +12,7 @@ header, footer {
   color: white;
   text-align: center;
   padding: 1em;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2); /* ヘッダーとフッターに軽い影を追加 */
 }
 
 nav ul {
@@ -26,6 +28,11 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s; /* ホバー時の色変更アニメーション */
+}
+
+nav ul li a:hover {
+  color: #ccc; /* ホバー時に色を変えてユーザーインタラクションを示す */
 }
 
 main {
@@ -33,8 +40,9 @@ main {
 }
 
 p {
+  line-height: 1.6; /* 読みやすさを考慮した行間隔 */
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 1rem; /* 段落間の適切なスペース */
 }
 
 .underline-text {
@@ -43,19 +51,32 @@ p {
 
 /* Navbarのカスタマイズ */
 .navbar {
-  background-color: #333 !important; /* 背景色を#333に設定 */
+  background-color: #333 !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,.1); /* ナビゲーションバーにも影を追加 */
 }
 
 .navbar .navbar-nav .nav-link {
-  color: white !important; /* ナビゲーションバーのリンクテキストを白に設定 */
+  color: white !important;
 }
 
 .navbar .navbar-brand {
-  color: white !important; /* ナビゲーションバーのブランド（タイトル）テキストを白に設定 */
+  color: white !important;
 }
 
 /* 現在アクティブなナビゲーションリンクの色を変更したい場合 */
 .navbar .navbar-nav .nav-item.active .nav-link {
-  color: #ccc !important; /* アクティブなリンクテキストの色を明るい灰色に設定 */
+  color: #ccc !important;
 }
 
+/* ボタンスタイルの追加 */
+.btn-custom {
+  background-color: #007bff; /* Bootstrapのプライマリーカラー */
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3; /* ホバー時に暗く */
+}
