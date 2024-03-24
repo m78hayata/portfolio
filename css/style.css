@@ -158,3 +158,25 @@ p {
   /* height: 48px;*/ /* 元のサイズの2倍の高さ */
   object-fit: contain; /* 縦横比を保持 (必要に応じて) */
 }
+
+.section {
+  background-color: #f0f0f0; /* セクションの背景色を少し暗めの色に設定 */
+  margin-bottom: 30px; /* セクション間の余白 */
+  padding: 20px; /* セクション内のパディング */
+  border-radius: 8px; /* 角を丸く */
+}
+
+.section h2 {
+  color: #333; /* セクションタイトルの色 */
+  margin-bottom: 15px; /* タイトルと内容の間隔 */
+  padding-bottom: 10px; /* タイトルの下のパディング */
+  border-bottom: 2px solid #ddd; /* タイトルの下に線を引く */
+}
+
+ul {
+  padding-left: 20px; /* リストのインデントを調整 */
+}
+
+ul li {
+  line-height: 1.6; /* リストアイテムの行間隔 */
+}
