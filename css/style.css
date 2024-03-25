@@ -144,7 +144,7 @@ p {
 }
 
 .date {
-  font-weight: bold;
+  font-weight: 600;
   margin-right: 10px; /* 日付とテキストの間隔 */
 }
 
