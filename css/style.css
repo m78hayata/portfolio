@@ -215,14 +215,19 @@ ul li {
 
 .image-container {
   position: relative;
-  text-align: center; /* 必要に応じてテキストを中央揃え */
+  display: flex; /* Flexboxを有効にする */
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  text-align: center; /* テキストを中央揃えに */
+  height: 100vh; /* コンテナの高さをビューポートの高さいっぱいに設定 */
+  color: white; /* テキストの色を白に設定 */
 }
 
 .overlay-text {
   position: absolute;
-  top: 0; /* 要素をコンテナの上部に配置 */
-  left: 0; /* 要素をコンテナの左端に配置 */
-  width: 100%; /* 親要素と同じ幅にする */
+  transform: translate(-50%, -50%); /* 中心からのオフセットを補正 */
+  top: 50%;
+  left: 50%;
 }
 
 .img-fluid {
