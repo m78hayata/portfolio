@@ -11,5 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         }
     });
-});
+    
+    const images = document.querySelectorAll('.slide-image');
+    let currentImageIndex = 0;
 
+    function rotateImage() {
+        images[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].style.display = 'block';
+    }
+
+    // 3秒ごとに画像を切り替える
+    setInterval(rotateImage, 3000);
+});
