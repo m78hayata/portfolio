@@ -203,14 +203,19 @@ ul li {
   background-image: url('images/top.jpg'); /* 背景に設定する画像のパス */
   background-size: cover; /* 画像がコンテナを完全に覆うように設定 */
   background-position: center; /* 画像がコンテナの中心に来るように設定 */
+  height: 100vh; /* ビューポートの高さいっぱいに設定 */
   display: flex;
   align-items: center; /* 子要素を垂直方向に中央揃えに */
   justify-content: center; /* 子要素を水平方向に中央揃えに */
   color: white; /* テキストの色を白に設定 */
 }
 
-.welcome-text {
-  font-size: 48px; /* テキストのサイズを大きく設定 */
-  font-weight: bold; /* テキストを太字に */
-  text-align: center; /* テキストを中央揃えに */
+.welcome-text h1 {
+  font-weight: bold; /* 太字 */
+  font-size: 2.5rem; /* 大きな文字サイズ */
+}
+
+.welcome-text p {
+  font-weight: bold; /* 太字 */
+  font-size: 1.25rem; /* 普通の大きさの文字 */
 }
