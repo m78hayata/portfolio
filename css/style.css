@@ -27,7 +27,7 @@ body {
   }
   
   .information-card .card-subtitle {
-    font-size: 0.1rem; /* 日付のフォントサイズを小さくする */
+    font-size: 0.6rem; /* 日付のフォントサイズを小さくする */
   }
 }
 
@@ -197,4 +197,21 @@ ul li {
 
 .card-link {
   color: #007bff; /* リンクの色を調整 */
+}
+
+.welcome-banner {
+  background-image: url('images/top.jpg'); /* 背景に設定する画像のパス */
+  background-size: cover; /* 画像がコンテナを完全に覆うように設定 */
+  background-position: center; /* 画像がコンテナの中心に来るように設定 */
+  height: 100vh; /* ビューポートの高さいっぱいに設定 */
+  display: flex;
+  align-items: center; /* 子要素を垂直方向に中央揃えに */
+  justify-content: center; /* 子要素を水平方向に中央揃えに */
+  color: white; /* テキストの色を白に設定 */
+}
+
+.welcome-text {
+  font-size: 48px; /* テキストのサイズを大きく設定 */
+  font-weight: bold; /* テキストを太字に */
+  text-align: center; /* テキストを中央揃えに */
 }
