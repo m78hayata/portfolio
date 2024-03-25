@@ -218,7 +218,7 @@ ul li {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  animation: fadeInUpToCenter 0.8s ease-out; /* アニメーションを適用 */
+  animation: fadeInUpToCenter 1.2s ease-out; /* アニメーションを適用 */
   color: white;
 }
 
