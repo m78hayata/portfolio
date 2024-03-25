@@ -22,6 +22,13 @@ body {
   .navbar-nav .nav-link {
     font-size: 18px;
   }
+  .information-card .card-title {
+    font-size: 1rem; /* タイトルのフォントサイズを小さくする */
+  }
+  
+  .information-card .card-subtitle {
+    font-size: 0.8rem; /* 日付のフォントサイズを小さくする */
+  }
 }
 
 .text-large, .text-small {
@@ -155,7 +162,6 @@ p {
 .contact-list li img {
   margin-right: 10px; /* 画像とテキストの間隔 */
   width: 48px; /* 元のサイズの2倍の幅 */
-  /* height: 48px;*/ /* 元のサイズの2倍の高さ */
   object-fit: contain; /* 縦横比を保持 (必要に応じて) */
 }
 
@@ -182,7 +188,7 @@ ul li {
 }
 
 .card-title {
-  color: #007bff; /* タイトルの色を変更 */
+  color: #7c27dc; /* タイトルの色を変更 */
 }
 
 .card-subtitle {
