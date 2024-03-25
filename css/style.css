@@ -23,11 +23,11 @@ body {
     font-size: 18px;
   }
   .information-card .card-title {
-    font-size: 1rem; /* タイトルのフォントサイズを小さくする */
+    font-size: 0.8rem; /* タイトルのフォントサイズを小さくする */
   }
   
   .information-card .card-subtitle {
-    font-size: 0.8rem; /* 日付のフォントサイズを小さくする */
+    font-size: 0.6rem; /* 日付のフォントサイズを小さくする */
   }
 }
 
