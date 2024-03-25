@@ -8,10 +8,19 @@ body {
 
 @media (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 14px; /* ボディのフォントサイズを少し小さく調整 */
   }
   h1, h2, h3, h4, h5, h6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* 見出しのフォントサイズを全体的に小さく調整 */
+  }
+  .card-title {
+    font-size: 1rem; /* タイトルのフォントサイズをさらに小さく */
+  }
+  .card-subtitle {
+    font-size: 0.85rem; /* 日付のフォントサイズを小さく */
+  }
+  .card-text {
+    font-size: 0.95rem; /* カードテキストのフォントサイズを調整 */
   }
   p {
     font-size: 1rem;
@@ -22,33 +31,10 @@ body {
   .navbar-nav .nav-link {
     font-size: 18px;
   }
-  .information-card .card-title {
-    font-size: 0.8rem; /* タイトルのフォントサイズを小さくする */
+  .date {
+    font-weight: 600;
+    margin-right: 10px; /* 日付とテキストの間隔 */
   }
-  
-  .information-card .card-subtitle {
-    font-size: 0.6rem; /* 日付のフォントサイズを小さくする */
-  }
-  /* .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    animation: fadeInUpToCenter 1.5s ease-out;
-    color: white;
-    padding: 0 20px;
-  }
-
-  .img-fluid {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .image-container {
-    height: 5vh;
-  } */
 }
 
 .text-large, .text-small {
@@ -164,7 +150,7 @@ p {
 }
 
 .date {
-  font-weight: 500;
+  font-weight: bold;
   margin-right: 10px; /* 日付とテキストの間隔 */
 }
 
