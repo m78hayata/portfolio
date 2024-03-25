@@ -205,16 +205,6 @@ ul li {
   color: #007bff; /* リンクの色を調整 */
 }
 
-.slide-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
 .image-container img {
   width: 100%; /* 表示画面の横幅と同じになるように設定 */
   height: auto; /* 縦横比を維持しつつ、高さを自動調整 */
