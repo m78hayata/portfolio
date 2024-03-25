@@ -200,14 +200,17 @@ ul li {
 }
 
 .welcome-banner {
-  background-image: url('images/top.jpg'); /* 背景に設定する画像のパス */
-  background-size: cover; /* 画像がコンテナを完全に覆うように設定 */
-  background-position: center; /* 画像がコンテナの中心に来るように設定 */
-  height: 100vh; /* ビューポートの高さいっぱいに設定 */
+  /* 背景画像として指定 */
+  background-image: url('images/top.jpg');
+  /* 背景画像が読み込めない場合に表示する背景色 */
+  background-color: #333; /* 濃いグレー */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
-  align-items: center; /* 子要素を垂直方向に中央揃えに */
-  justify-content: center; /* 子要素を水平方向に中央揃えに */
-  color: white; /* テキストの色を白に設定 */
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .welcome-text h1 {
