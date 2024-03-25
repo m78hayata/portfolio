@@ -203,7 +203,6 @@ ul li {
   background-image: src="images/top.jpg" alt="トップ画像"; /* 背景に設定する画像のパス */
   background-size: cover; /* 画像がコンテナを完全に覆うように設定 */
   background-position: center; /* 画像がコンテナの中心に来るように設定 */
-  height: 100vh; /* ビューポートの高さいっぱいに設定 */
   display: flex;
   align-items: center; /* 子要素を垂直方向に中央揃えに */
   justify-content: center; /* 子要素を水平方向に中央揃えに */
