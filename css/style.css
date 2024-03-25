@@ -47,7 +47,7 @@ body {
     height: auto; /* 画像の高さを自動調整して縦横比を保持 */
   }
   .image-container {
-    height: 20vh; /* スマートフォンではコンテナの高さを半分に調整 */
+    height: 5vh;
   }
 }
 
