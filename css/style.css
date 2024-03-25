@@ -29,6 +29,20 @@ body {
   .information-card .card-subtitle {
     font-size: 0.6rem; /* 日付のフォントサイズを小さくする */
   }
+  .overlay-text {
+    position: absolute;
+    top: 50%; /* 親要素の中心に配置 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 中心から正確に配置 */
+    width: 100%; /* 親要素の幅に合わせる */
+    padding: 0 20px; /* テキストのパディングを調整 */
+  }
+
+  .img-fluid {
+    display: block; /* 画像をブロック要素として表示 */
+    max-width: 100%; /* 画像の最大幅を親要素の幅に合わせる */
+    height: auto; /* 画像の高さを自動調整して縦横比を保持 */
+  }
 }
 
 .text-large, .text-small {
