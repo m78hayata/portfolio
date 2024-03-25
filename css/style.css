@@ -140,7 +140,7 @@ p {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -8px; /* 中心点の位置を調整して線と丸が中心で合うように */
+  left: -7px; /* 中心点の位置を調整して線と丸が中心で合うように */
   top: 0;
   height: 12px;
   width: 12px;
