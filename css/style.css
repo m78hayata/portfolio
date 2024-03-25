@@ -200,7 +200,7 @@ ul li {
 }
 
 .welcome-banner {
-  background-image: url('images/top.jpg'); /* 背景に設定する画像のパス */
+  background-image: src="images/top.jpg" alt="トップ画像"; /* 背景に設定する画像のパス */
   background-size: cover; /* 画像がコンテナを完全に覆うように設定 */
   background-position: center; /* 画像がコンテナの中心に来るように設定 */
   height: 100vh; /* ビューポートの高さいっぱいに設定 */
