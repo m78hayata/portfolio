@@ -200,21 +200,18 @@ ul li {
 }
 
 .image-container {
-  position: relative; /* コンテナの位置を相対位置に設定 */
+  position: relative;
+  text-align: center; /* 必要に応じてテキストを中央揃え */
 }
 
 .overlay-text {
-  position: absolute; /* テキストの位置を絶対位置に設定 */
-  top: 50%; /* 上端から50%の位置に設定 */
-  left: 50%; /* 左端から50%の位置に設定 */
-  transform: translate(-50%, -50%); /* 中心に配置するために位置を調整 */
-  width: 100%; /* コンテナの幅いっぱいにする */
+  position: absolute;
+  top: 0; /* 要素をコンテナの上部に配置 */
+  left: 0; /* 要素をコンテナの左端に配置 */
+  width: 100%; /* 親要素と同じ幅にする */
 }
 
-.text-white {
-  color: white; /* テキストの色を白に設定 */
-}
-
-.text-center {
-  text-align: center; /* テキストを中央揃えにする */
+.img-fluid {
+  width: 100%; /* 画像をコンテナの幅に合わせる */
+  height: auto; /* 画像の縦横比を保つ */
 }
