@@ -29,26 +29,26 @@ body {
   .information-card .card-subtitle {
     font-size: 0.6rem; /* 日付のフォントサイズを小さくする */
   }
-  .overlay-text {
+  /* .overlay-text {
     position: absolute;
-    top: 50%; /* 親要素の中心に配置 */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* 中心から正確に配置 */
-    width: 100%; /* 親要素の幅に合わせる */
+    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
-    animation: fadeInUpToCenter 1.5s ease-out; /* アニメーションを適用 */
+    animation: fadeInUpToCenter 1.5s ease-out;
     color: white;
-    padding: 0 20px; /* テキストのパディングを調整 */
+    padding: 0 20px;
   }
 
   .img-fluid {
-    display: block; /* 画像をブロック要素として表示 */
-    max-width: 100%; /* 画像の最大幅を親要素の幅に合わせる */
-    height: auto; /* 画像の高さを自動調整して縦横比を保持 */
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   .image-container {
     height: 5vh;
-  }
+  } */
 }
 
 .text-large, .text-small {
@@ -219,22 +219,11 @@ ul li {
   color: #007bff; /* リンクの色を調整 */
 }
 
-/*.image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 70vh;
-  color: white;
-}*/
-
 .image-container img {
   width: 100%; /* 表示画面の横幅と同じになるように設定 */
   height: auto; /* 縦横比を維持しつつ、高さを自動調整 */
   object-fit: contain; /* 縦横比を保ちつつ、画像がコンテナに収まるように調整 */
 }
-
 
 .overlay-text {
   position: absolute;
@@ -243,7 +232,7 @@ ul li {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  animation: fadeInUpToCenter 1.5s ease-out; /* アニメーションを適用 */
+  animation: fadeInUpToCenter 0.8s ease-out; /* アニメーションを適用 */
   color: white;
 }
 
