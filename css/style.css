@@ -43,6 +43,9 @@ body {
     max-width: 100%; /* 画像の最大幅を親要素の幅に合わせる */
     height: auto; /* 画像の高さを自動調整して縦横比を保持 */
   }
+  .image-container {
+    height: 50vh; /* スマートフォンではコンテナの高さを半分に調整 */
+  }
 }
 
 .text-large, .text-small {
@@ -219,7 +222,7 @@ ul li {
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center; /* 垂直方向の中央揃え */
   text-align: center; /* テキストを中央揃えに */
-  height: 100vh; /* コンテナの高さをビューポートの高さいっぱいに設定 */
+  height: 60vh; /* コンテナの高さをビューポートの高さいっぱいに設定 */
   color: white; /* テキストの色を白に設定 */
 }
 
