@@ -36,7 +36,7 @@ body {
     transform: translate(-50%, -50%); /* 中心から正確に配置 */
     width: 100%; /* 親要素の幅に合わせる */
     text-align: center;
-    animation: fadeInUp 1.5s ease-out; /* アニメーションを適用 */
+    animation: fadeInUpToCenter 1.5s ease-out; /* アニメーションを適用 */
     color: white;
     padding: 0 20px; /* テキストのパディングを調整 */
   }
@@ -236,7 +236,7 @@ ul li {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  animation: fadeInUp 1.5s ease-out; /* アニメーションを適用 */
+  animation: fadeInUpToCenter 1.5s ease-out; /* アニメーションを適用 */
   color: white;
 }
 
@@ -245,13 +245,13 @@ ul li {
   height: auto; /* 画像の縦横比を保つ */
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInUpToCenter {
   from {
-    transform: translateY(20px); /* 開始時点でテキストを少し下に配置 */
-    opacity: 0; /* 開始時点で完全に透明 */
+    transform: translate(-50%, -40%); /* 中心から少し下にオフセット */
+    opacity: 0; /* 完全に透明 */
   }
   to {
-    transform: translateY(0); /* 最終的に通常位置に */
-    opacity: 1; /* 最終的に完全に不透明 */
+    transform: translate(-50%, -50%); /* 正確に中央に */
+    opacity: 1; /* 完全に不透明 */
   }
 }
