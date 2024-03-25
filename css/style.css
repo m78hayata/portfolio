@@ -27,7 +27,7 @@ body {
   }
   
   .information-card .card-subtitle {
-    font-size: 0.6rem; /* 日付のフォントサイズを小さくする */
+    font-size: 0.1rem; /* 日付のフォントサイズを小さくする */
   }
 }
 
