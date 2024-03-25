@@ -35,6 +35,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); /* 中心から正確に配置 */
     width: 100%; /* 親要素の幅に合わせる */
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out; /* アニメーションを適用 */
+    color: white;
     padding: 0 20px; /* テキストのパディングを調整 */
   }
 
@@ -228,12 +231,27 @@ ul li {
 
 .overlay-text {
   position: absolute;
-  transform: translate(-50%, -50%); /* 中心からのオフセットを補正 */
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-out; /* アニメーションを適用 */
+  color: white;
 }
 
 .img-fluid {
   width: 100%; /* 画像をコンテナの幅に合わせる */
   height: auto; /* 画像の縦横比を保つ */
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px); /* 開始時点でテキストを少し下に配置 */
+    opacity: 0; /* 開始時点で完全に透明 */
+  }
+  to {
+    transform: translateY(0); /* 最終的に通常位置に */
+    opacity: 1; /* 最終的に完全に不透明 */
+  }
 }
