@@ -199,26 +199,22 @@ ul li {
   color: #007bff; /* リンクの色を調整 */
 }
 
-.welcome-banner {
-  /* 背景画像として指定 */
-  background-image: url('images/top.jpg');
-  /* 背景画像が読み込めない場合に表示する背景色 */
-  background-color: #333; /* 濃いグレー */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.image-container {
+  position: relative; /* コンテナの位置を相対位置に設定 */
 }
 
-.welcome-text h1 {
-  font-weight: bold; /* 太字 */
-  font-size: 2.5rem; /* 大きな文字サイズ */
+.overlay-text {
+  position: absolute; /* テキストの位置を絶対位置に設定 */
+  top: 50%; /* 上端から50%の位置に設定 */
+  left: 50%; /* 左端から50%の位置に設定 */
+  transform: translate(-50%, -50%); /* 中心に配置するために位置を調整 */
+  width: 100%; /* コンテナの幅いっぱいにする */
 }
 
-.welcome-text p {
-  font-weight: bold; /* 太字 */
-  font-size: 1.25rem; /* 普通の大きさの文字 */
+.text-white {
+  color: white; /* テキストの色を白に設定 */
+}
+
+.text-center {
+  text-align: center; /* テキストを中央揃えにする */
 }
